@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=GoCommand
+comment0.text=\n\ @inv\ <pre>\n\ \ \ \ \ argsNb()\ \=\=\ 1\n\ \ \ \ \ getArgument(0)\ instanceof\ Direction\ </pre>\n
+comment1.params=args
+comment1.target=GoCommand(java.lang.String[])
+comment1.text=\n\ @pre\ <pre>\n\ \ \ \ \ args\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ args.length\ \=\=\ 0\ \=\=>\ getArgument(0)\ \=\=\ null\n\ \ \ \ \ args.length\ >\ 0\ \ \=\=>\ getArgument(0)\ \=\=\ Direction.valueOf(args[0])\n\ </pre>\n
+comment2.params=p
+comment2.target=void\ executeFor(pyland.IPlayer)
+comment3.params=message
+comment3.target=java.lang.String\ indent(java.lang.String)
+comment4.params=args
+comment4.target=java.lang.Object[]\ convertArgs(java.lang.String[])
+numComments=5

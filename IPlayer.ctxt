@@ -1,0 +1,46 @@
+#BlueJ class context
+comment0.target=IPlayer
+comment0.text=\n\ Mod\u00E9lise\ les\ joueurs.\n\ Un\ joueur\ se\ d\u00E9place\ de\ salle\ en\ salle\ \u00E0\ la\ recherche\ de\ la\ sortie\n\ \ du\ labyrinthe.\n\ @inv\ <pre>\n\ \ \ \ \ getLocation()\ \=\=\ r\ \=\=>\ r.getVisitor()\ \=\=\ this\n\ \ \ \ \ getHitPoints()\ >\=\ 0\n\ \ \ \ \ isDead()\ <\=\=>\ getHitPoints()\ \=\=\ 0\n\ \ \ \ \ isDead()\ \=\=>\ hasLeft()\n\ \ \ \ \ getPowerLevel()\ >\=\ 0\ </pre>\n\ @cons\ <pre>\n\ \ \ \ \ $DESC$\ Un\ joueur\ qui\ n'est\ pas\ encore\ plac\u00E9\ dans\ une\ salle.\n\ \ \ \ \ $ARGS$\ int\ hp\n\ \ \ \ \ $PRE$\n\ \ \ \ \ \ \ \ \ hp\ >\ 0\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ getLocation()\ \=\=\ null\n\ \ \ \ \ \ \ \ \ \!hasLeft()\n\ \ \ \ \ \ \ \ \ getHitPoints()\ \=\=\ hp\n\ \ \ \ \ \ \ \ \ getKey()\ \=\=\ null\n\ \ \ \ \ \ \ \ \ getPowerLevel()\ \=\=\ 0\ </pre>\n
+comment1.params=
+comment1.target=int\ getHitPoints()
+comment1.text=\n\ Le\ nombre\ de\ points\ d'attaque\ de\ ce\ joueur.\n
+comment10.params=q
+comment10.target=void\ setMorePowerful(int)
+comment10.text=\n\ Transforme\ ce\ joueur\ en\ super\ h\u00E9ro\ pour\ q\ tours.\n\ @pre\ <pre>\n\ \ \ \ \ q\ >\=\ 0\n\ \ \ \ \ \!hasLeft()\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getHitPoints()\ \=\=\ old\ getHitPoints()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\ +\ q\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment11.params=q
+comment11.target=void\ setLessPowerful(int)
+comment11.text=\n\ Fait\ perdre\ des\ super\ pouvoirs\ au\ joueur.\n\ @pre\ <pre>\n\ \ \ \ \ getPowerLevel()\ >\=\ q\ >\=\ 0\n\ \ \ \ \ \!hasLeft()\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getHitPoints()\ \=\=\ old\ getHitPoints()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\ -\ q\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment12.params=q
+comment12.target=void\ strengthen(int)
+comment12.text=\n\ Augmente\ le\ nombre\ de\ points\ d'attaque\ de\ ce\ joueur.\n\ @pre\ <pre>\n\ \ \ \ \ q\ >\=\ 0\n\ \ \ \ \ \!hasLeft()\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\n\ \ \ \ \ getHitPoints()\ \=\=\ old\ getHitPoints()\ +\ q\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment13.params=k
+comment13.target=void\ pickUpKey(Key)
+comment13.text=\n\ Donne\ la\ cl\u00E9\ au\ joueur.\n\ @pre\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ k\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\n\ \ \ \ \ getHitPoints()\ \=\=\ old\ getHitPoints()\n\ \ \ \ \ getKey()\ \=\=\ k\ </pre>\n
+comment14.params=
+comment14.target=void\ unsetLocation()
+comment14.text=\n\ Dissocie\ <code>getVisitor()</code>\ de\ cette\ salle.\n\ @pre\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ getLocation()\ \=\=\ null\n\ \ \ \ \ (old\ getLocation()).getVisitor()\ \=\=\ null\n\ \ \ \ \ l'\u00E9tat\ du\ joueur\ peut\ avoir\ chang\u00E9\ selon\ le\ type\ de\n\ \ \ \ \ \ old\ getLocation()\ </pre>\n
+comment2.params=
+comment2.target=Key\ getKey()
+comment2.text=\n\ Donne\ la\ cl\u00E9\ du\ joueur.\n
+comment3.params=
+comment3.target=IRoom\ getLocation()
+comment3.text=\n\ La\ salle\ dans\ laquelle\ se\ trouve\ le\ joueur.\n
+comment4.params=
+comment4.target=int\ getPowerLevel()
+comment4.text=\n\ La\ quantit\u00E9\ de\ superpouvoir\ du\ joueur.\n
+comment5.params=
+comment5.target=boolean\ isDead()
+comment5.text=\n\ Indique\ si\ le\ joueur\ est\ mort.\n
+comment6.params=
+comment6.target=boolean\ hasLeft()
+comment6.text=\n\ Indique\ si\ le\ joueur\ a\ arr\u00EAt\u00E9\ la\ partie.\n
+comment7.params=
+comment7.target=void\ leave()
+comment7.text=\n\ Fait\ s'arr\u00EAter\ le\ joueur.\n\ @pre\ <pre>\n\ \ \ \ \ \!hasLeft()\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\n\ \ \ \ \ getHitPoints()\ \=\=\ old\ getHitPoints()\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment8.params=
+comment8.target=void\ kill()
+comment8.text=\n\ Tue\ le\ joueur.\n\ @pre\n\ \ \ \ \ \!hasLeft()\n\ @post\ <pre>\n\ \ \ \ \ getLocation()\ \=\=\ old\ getLocation()\n\ \ \ \ \ getPowerLevel()\ \=\=\ old\ getPowerLevel()\n\ \ \ \ \ isDead()\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment9.params=r
+comment9.target=void\ setLocation(IRoom)
+comment9.text=\n\ Place\ le\ joueur\ dans\ la\ salle\ <code>r</code>.\n\ @pre\ <pre>\n\ \ \ \ \ \!hasLeft()\n\ \ \ \ \ getLocation()\ \=\=\ null\ &&\ r\ \!\=\ null\n\ \ \ \ \ r.getVisitor()\ \=\=\ null\ ||\ r.getVisitor()\ \=\=\ this\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ getLocation()\ \=\=\ r\n\ \ \ \ \ l'\u00E9tat\ du\ joueur\ peut\ avoir\ chang\u00E9\ selon\ le\ type\ de\ r\ </pre>\n
+numComments=15

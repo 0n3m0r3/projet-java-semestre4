@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=IRoomNetwork
+comment0.text=\n\ Mod\u00E9lise\ le\ r\u00E9seau\ de\ connexion\ entre\ les\ salles\ du\ labyrinthe.\n\ \n\ @inv\ <pre>\n\ \ \ \ \ canExit(r,\ d)\n\ \ \ \ \ \ \ \ \ <\=\=>\ getRoom(r,\ d)\ \!\=\ null\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ &&\ (getDoor(r,\ d)\ \=\=\ null\ ||\ \!getDoor(r,\ d).isLocked())\n\ \ \ \ \ getRoom(r,\ d)\ \=\=\ s\ <\=\=>\ getRoom(s,\ d.opposite())\ \=\=\ r\n\ \ \ \ \ getRoom(r,\ d)\ \=\=\ s\ \=\=>\ getDoor(r,\ d)\ \=\=\ getDoor(s,\ d.opposite())\n\ \ \ \ \ getRoom(r,\ d)\ \=\=\ null\ \=\=>\ getDoor(r,\ d)\ \=\=\ null\ </pre>\n\ \ \ \ \ \n\ @cons\ <pre>\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ getRoom(r,\ d)\ \=\=\ null\ </pre>\n
+comment1.params=r\ d
+comment1.target=boolean\ canExit(IRoom,\ util.Direction)
+comment1.text=\n\ Indique\ s'il\ y\ a\ un\ passage\ ouvert\ dans\ la\ direction\ <code>d</code>\n\ \ \u00E0\ partir\ de\ <code>r</code>.\n\ @pre\ <pre>\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\ </pre>\n
+comment2.params=r\ d
+comment2.target=IDoor\ getDoor(IRoom,\ util.Direction)
+comment2.text=\n\ La\ porte\ qui\ s\u00E9pare\ r\ de\ sa\ voisine\ dans\ la\ direction\ d.\n\ @pre\ <pre>\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\ </pre>\n
+comment3.params=r\ d
+comment3.target=IRoom\ getRoom(IRoom,\ util.Direction)
+comment3.text=\n\ La\ salle\ \u00E0\ laquelle\ on\ acc\u00E8de\ \u00E0\ partir\ de\ r,\ dans\ la\ direction\ d.\n\ @pre\ <pre>\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\ </pre>\n
+comment4.params=
+comment4.target=void\ clear()
+comment4.text=\n\ Supprime\ tout\ passage\ de\ ce\ r\u00E9seau.\n\ @post\ <pre>\n\ \ \ \ \ getRoom(r,\ d)\ \=\=\ null\ </pre>\n
+comment5.params=r1\ d\ r2
+comment5.target=void\ connect(IRoom,\ util.Direction,\ IRoom)
+comment5.text=\n\ Etablit\ un\ passage\ entre\ r1\ et\ r2,\ dans\ la\ direction\ d.\n\ @pre\ <pre>\n\ \ \ \ \ r1\ \!\=\ null\ &&\ d\ \!\=\ null\ &&\ r2\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ Soit\ x\ \:\:\=\ old\ getRoom(r1,\ d)\n\ \ \ \ \ \ \ \ \ \ y\ \:\:\=\ old\ getRoom(r2,\ d.opposite())\n\ \ \ \ \ x\ \!\=\ null\ &&\ x\ \!\=\ r2\ \=\=>\ getRoom(x,\ d.opposite())\ \=\=\ null\n\ \ \ \ \ y\ \!\=\ null\ &&\ y\ \!\=\ r1\ \=\=>\ getRoom(y,\ d)\ \=\=\ null\n\ \ \ \ \ getRoom(r1,\ d)\ \=\=\ r2\n\ \ \ \ \ getDoor(r1,\ d)\ \=\=\ null\ </pre>\n
+comment6.params=r\ d\ door
+comment6.target=void\ install(IRoom,\ util.Direction,\ IDoor)
+comment6.text=\n\ Installe\ la\ porte\ door\ entre\ r\ et\ getRoom(r,\ d).\n\ @pre\ <pre>\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\ &&\ door\ \!\=\ null\n\ \ \ \ \ getRoom(r,\ d)\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ getDoor(r,\ d)\ \=\=\ door\ </pre>\n
+numComments=7

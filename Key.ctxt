@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Key
+comment0.text=\n\ @inv\ <pre>\n\ \ \ \ \ description()\ \!\=\ null\ &&\ \!description().equals("")\ </pre>\n
+comment1.params=d
+comment1.target=Key(java.lang.String)
+comment1.text=\n\ Une\ cl\u00E9\ de\ description\ d.\n\ @pre\ <pre>\n\ \ \ \ \ d\ \!\=\ null\ &&\ d.length()\ >\ 0\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ description().equals(d)\ </pre>\n
+comment2.params=
+comment2.target=java.lang.String\ description()
+comment2.text=\n\ La\ description\ de\ cette\ cl\u00E9.\n
+numComments=3

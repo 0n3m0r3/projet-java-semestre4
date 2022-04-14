@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=IKeyRoom
+comment0.text=\n\ @cons\ <pre>\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ getVisitor()\ \=\=\ null\n\ \ \ \ \ \ \ \ \ getKey()\ \=\=\ null\ </pre>\n
+comment1.params=
+comment1.target=Key\ getKey()
+comment1.text=\n\ Retourne\ la\ cl\u00E9\ ou\ null\ s'il\ n'y\ en\ a\ pas.\n
+comment2.params=key
+comment2.target=void\ putKey(Key)
+comment2.text=\n\ D\u00E9pose\ la\ cl\u00E9\ key\ dans\ cette\ salle.\n\ @pre\ <pre>\n\ \ \ \ \ key\ \!\=\ null\ &&\ getKey()\ \=\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ getVisitor()\ \=\=\ old\ getVisitor()\n\ \ \ \ \ getKey()\ \=\=\ key\ </pre>\n
+comment3.params=
+comment3.target=void\ removeKey()
+comment3.text=\n\ Ramasse\ la\ cl\u00E9\ de\ cette\ salle.\n\ @post\ <pre>\n\ \ \ \ \ getVisitor()\ \=\=\ old\ getVisitor()\n\ \ \ \ \ getKey()\ \=\=\ null\ </pre>\n
+comment4.params=v
+comment4.target=void\ setVisitor(IPlayer)
+comment4.text=\n\ @post\ <pre>\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+comment5.params=
+comment5.target=void\ unsetVisitor()
+comment5.text=\n\ @post\ <pre>\n\ \ \ \ \ getKey()\ \=\=\ old\ getKey()\ </pre>\n
+numComments=6

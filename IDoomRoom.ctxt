@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=IDoomRoom
+comment0.text=\n\ @cons\ <pre>\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ getVisitor()\ \=\=\ null\ </pre>\n
+comment1.params=v
+comment1.target=void\ setVisitor(IPlayer)
+comment1.text=\n\ @post\ <pre>\n\ \ \ \ \ getVisitor().getPowerLevel()\ \=\=\ 0\n\ \ \ \ \ (old\ v.getPowerLevel()\ \=\=\ 0)\n\ \ \ \ \ \ \ \ \ \=\=>\ getVisitor().isDead()\n\ \ \ \ \ \ \ \ \ \ \ \ \ fengShuiEffect().contains("Vous\ mourez\ dans\ d'atroces"\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ "\ souffrances.")\n\ \ \ \ \ (old\ v.getPowerLevel()\ >\ 0)\n\ \ \ \ \ \ \ \ \ \=\=>\ \!getVisitor().isDead()\n\ \ \ \ \ \ \ \ \ \ \ \ \ fengShuiEffect().contains("Vous\ sentez\ que\ seul"\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ "\ un\ super\ h\u00E9ros\ pourra\ sortir\ d'ici.")\ </pre>\n
+numComments=2

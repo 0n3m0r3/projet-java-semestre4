@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=IDoor
+comment0.text=\n\ Mod\u00E9lise\ la\ notion\ de\ porte.\n\ @inv\ <pre>\n\ \ \ \ \ exists\ key\:IKey\ \:\ keyholeMatchWith(key)\n\ \ \ \ \ keyholeMatchWith(k1)\ &&\ keyholeMatchWith(k2)\ \=\=>\ k1\ \=\=\ k2\ </pre>\n\ @cons\ <pre>\n\ \ \ \ \ $DESC$\ Une\ porte\ (ouverte)\ adapt\u00E9e\ \u00E0\ la\ cl\u00E9\ k.\n\ \ \ \ \ $ARGS$\ Key\ k\n\ \ \ \ \ $PRE$\ k\ \!\=\ null\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ keyholeMatchWith(k)\n\ \ \ \ \ \ \ \ \ \!isLocked()\ </pre>\n
+comment1.params=key
+comment1.target=boolean\ keyholeMatchWith(Key)
+comment1.text=\n\ Indique\ si\ <code>key</code>\ est\ bien\ adapt\u00E9e\ \u00E0\ cette\ porte.\n\ @pre\ <pre>\n\ \ \ \ \ key\ \!\=\ null\ </pre>\n
+comment2.params=
+comment2.target=boolean\ isLocked()
+comment2.text=\n\ Indique\ si\ la\ porte\ est\ ferm\u00E9e\ ou\ non.\n
+comment3.params=key
+comment3.target=void\ lock(Key)
+comment3.text=\n\ Ferme\ cette\ porte\ avec\ <code>key</code>.\n\ @pre\ <pre>\n\ \ \ \ \ key\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ keyholeMatchWith(key)\ \=\=>\ isLocked()\n\ \ \ \ \ \!keyholeMatchWith(key)\ \=\=>\ isLocked()\ \=\=\ old\ isLocked()\ </pre>\n
+comment4.params=key
+comment4.target=void\ unlock(Key)
+comment4.text=\n\ Ouvre\ cette\ porte\ avec\ <code>key</code>.\n\ @pre\ <pre>\n\ \ \ \ \ key\ \!\=\ null\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ keyholeMatchWith(key)\ \=\=>\ \!isLocked()\n\ \ \ \ \ \!keyholeMatchWith(key)\ \=\=>\ isLocked()\ \=\=\ old\ isLocked()\ </pre>\n
+numComments=5

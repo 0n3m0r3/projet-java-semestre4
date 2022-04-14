@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Pair
+comment0.text=\n\ @inv\n\ \ \ \ \ room()\ \!\=\ null\n
+comment1.params=room
+comment1.target=Pair(IRoom)
+comment1.text=\n\ @pre\n\ \ \ \ \ room\ \!\=\ null\n\ @post\n\ \ \ \ \ room()\ \=\=\ room\n\ \ \ \ \ door()\ \=\=\ null\n
+comment2.params=
+comment2.target=IRoom\ room()
+comment3.params=
+comment3.target=IDoor\ door()
+comment4.params=d
+comment4.target=void\ setDoor(IDoor)
+comment4.text=\n\ Associe\ une\ porte\ \u00E0\ cette\ paire.\n\ @pre\n\ \ \ \ \ d\ \!\=\ null\n\ @post\n\ \ \ \ \ door()\ \=\=\ d\n
+numComments=5

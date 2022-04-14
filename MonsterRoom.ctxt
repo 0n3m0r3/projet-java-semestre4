@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MonsterRoom
+comment1.params=n
+comment1.target=MonsterRoom(int)
+comment2.params=
+comment2.target=int\ monstersNb()
+comment3.params=v
+comment3.target=void\ setVisitor(IPlayer)
+comment4.params=
+comment4.target=java.lang.String\ computeFengShuiEffect()
+numComments=5

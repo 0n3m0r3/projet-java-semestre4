@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=MagicRoom
+comment1.params=
+comment1.target=MagicRoom()
+comment2.params=v
+comment2.target=void\ setVisitor(IPlayer)
+comment3.params=
+comment3.target=java.lang.String\ computeFengShuiEffect()
+comment4.params=a\ b
+comment4.target=int\ alea(int,\ int)
+comment4.text=\n\ Un\ nombre\ al\u00E9atoire\ compris\ entre\ a\ et\ b\ (au\ sens\ large).\n\ @pre\ <pre>\n\ \ \ \ \ 0\ <\ a\ <\=\ b\ </pre>\n\ @post\ <pre>\n\ \ \ \ \ a\ <\=\ result\ <\=\ b\ </pre>\n
+numComments=5

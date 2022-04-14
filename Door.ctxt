@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Door
+comment1.params=key
+comment1.target=Door(Key)
+comment2.params=key
+comment2.target=boolean\ keyholeMatchWith(Key)
+comment3.params=
+comment3.target=boolean\ isLocked()
+comment4.params=key
+comment4.target=void\ lock(Key)
+comment5.params=key
+comment5.target=void\ unlock(Key)
+numComments=6

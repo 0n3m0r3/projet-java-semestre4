@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Room
+comment1.params=
+comment1.target=Room()
+comment2.params=
+comment2.target=IPlayer\ getVisitor()
+comment3.params=
+comment3.target=java.lang.String\ fengShuiEffect()
+comment4.params=
+comment4.target=java.lang.String\ computeFengShuiEffect()
+comment5.params=v
+comment5.target=void\ setVisitor(IPlayer)
+comment6.params=
+comment6.target=void\ unsetVisitor()
+numComments=7

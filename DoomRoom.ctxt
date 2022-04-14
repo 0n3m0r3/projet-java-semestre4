@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=DoomRoom
+comment1.params=
+comment1.target=DoomRoom()
+comment2.params=v
+comment2.target=void\ setVisitor(IPlayer)
+comment3.params=
+comment3.target=java.lang.String\ computeFengShuiEffect()
+numComments=4

@@ -1,0 +1,32 @@
+#BlueJ class context
+comment0.target=RoomNetwork
+comment1.params=
+comment1.target=RoomNetwork()
+comment10.params=r\ d
+comment10.target=IRoom\ getRoomImpl(IRoom,\ util.Direction)
+comment10.text=\n\ La\ salle\ \u00E0\ laquelle\ on\ acc\u00E8de\ \u00E0\ partir\ de\ r,\ dans\ la\ direction\ d.\n\ @pre\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\n
+comment11.params=src\ d\ dest
+comment11.target=void\ setRelationInOneWay(IRoom,\ util.Direction,\ IRoom)
+comment11.text=\n\ Etablit\ une\ relation\ entre\ src\ et\ dest,\ dans\ la\ direction\ d\ en\ partant\n\ \ de\ src.\n\ L'invariant\ n'est\ pas\ requis\ en\ entr\u00E9e\ et\ n'est\ pas\ respect\u00E9\ en\ sortie\ \!\n\ @pre\n\ \ \ \ \ src\ \!\=\ null\ &&\ d\ \!\=\ null\ &&\ dest\ \!\=\ null\n\ \ \ \ \ getRoom(src,\ d)\ \=\=\ null\n\ @post\n\ \ \ \ \ getRoom(src,\ d)\ \=\=\ dest\n
+comment12.params=r\ d
+comment12.target=void\ unsetRelationInOneWay(IRoom,\ util.Direction)
+comment12.text=\n\ Sachant\ qu'il\ existe\ une\ relation\ \u00E0\ partir\ de\ r\ dans\ la\ direction\ d,\n\ \ supprime\ uniquement\ cette\ relation.\n\ L'invariant\ n'est\ pas\ requis\ en\ entr\u00E9e\ et\ n'est\ pas\ respect\u00E9\ en\ sortie\ \!\n\ @pre\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\n\ \ \ \ \ getRoom(r,\ d)\ \!\=\ null\n\ @post\n\ \ \ \ \ getRoom(r,\ d)\ \=\=\ null\n
+comment2.params=r\ d
+comment2.target=boolean\ canExit(IRoom,\ util.Direction)
+comment3.params=r\ d
+comment3.target=IRoom\ getRoom(IRoom,\ util.Direction)
+comment4.params=r\ d
+comment4.target=IDoor\ getDoor(IRoom,\ util.Direction)
+comment5.params=
+comment5.target=void\ clear()
+comment6.params=r1\ d\ r2
+comment6.target=void\ connect(IRoom,\ util.Direction,\ IRoom)
+comment7.params=r\ d\ door
+comment7.target=void\ install(IRoom,\ util.Direction,\ IDoor)
+comment8.params=r\ d
+comment8.target=Pair\ getPair(IRoom,\ util.Direction)
+comment8.text=\n\ La\ Pair\ \u00E0\ laquelle\ on\ acc\u00E8de\ \u00E0\ partir\ de\ r,\ dans\ la\ direction\ d.\n\ @pre\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\n
+comment9.params=r\ d
+comment9.target=IDoor\ getDoorImpl(IRoom,\ util.Direction)
+comment9.text=\n\ La\ porte\ qui\ s\u00E9pare\ r\ de\ sa\ voisine\ dans\ la\ direction\ d.\n\ @pre\ <pre>\n\ \ \ \ \ r\ \!\=\ null\ &&\ d\ \!\=\ null\ </pre>\n
+numComments=13

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=OpenCommand
+comment1.params=args
+comment1.target=OpenCommand(java.lang.String[])
+comment2.params=p
+comment2.target=void\ executeFor(pyland.IPlayer)
+comment3.params=args
+comment3.target=java.lang.Object[]\ convertArgs(java.lang.String[])
+numComments=4

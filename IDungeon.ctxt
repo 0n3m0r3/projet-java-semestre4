@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=IDungeon
+comment0.text=\n\ @cons\ <pre>\n\ \ \ \ \ $POST$\n\ \ \ \ \ \ \ \ \ getVisitor()\ \=\=\ null\n\ \ \ \ \ \ \ \ \ isPrincessCaptive()\ </pre>\n
+comment1.params=
+comment1.target=boolean\ isPrincessCaptive()
+comment1.text=\n\ Indique\ si\ la\ princesse\ est\ retenue\ captive\ ou\ non.\n
+comment2.params=v
+comment2.target=void\ setVisitor(IPlayer)
+comment2.text=\n\ @post\ <pre>\n\ \ \ \ \ old\ containsPrincess()\n\ \ \ \ \ \ \ \ \ \=\=>\ fengShuiEffect().contains("Vous\ avez\ lib\u00E9r\u00E9\ la\ princesse\ \!")\n\ \ \ \ \ \!isPrincessCaptive()\ </pre>\n
+comment3.params=
+comment3.target=void\ unsetVisitor()
+comment3.text=\n\ @post\ <pre>\n\ \ \ \ \ isPrincessCaptive()\ \=\=\ old\ isPrincessCaptive()\ </pre>\n
+numComments=4
